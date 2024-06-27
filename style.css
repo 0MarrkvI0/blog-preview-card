@@ -1,0 +1,135 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+:root {
+    --base: hsl(47, 88%, 63%);
+    --cover: hsl(0, 0%, 100%);
+    --var1: hsl(0, 0%, 50%);
+    --standard: hsl(0, 0%, 7%);
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--base);
+    height: 100%;
+    width: 100%;
+    font-family: "Figtree";
+    font-size: 16px;
+}
+
+.screen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+ 
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    height: 522px;
+    width: 384px;
+    padding: 24px;
+    margin: 0;
+    gap: 24px;
+    background-color: var(--cover);
+    border: 1px var(--standard) solid; 
+    border-radius: 20px;
+    align-items:flex-start;
+    box-shadow: 20px 20px var(--standard); 
+    
+}
+.card h2 
+{
+    color:  var(--base);
+}
+
+
+.preview_pic
+{
+    width: 336px;
+    height: 200px;
+    border-radius: 20px;
+}
+
+.main
+{
+    gap: 12px;
+}
+
+.tag
+{
+    display:inline-block;
+    background-color: var(--base);
+    padding: 6px 12px;
+    border-radius: 4px;
+    margin: 0;
+}
+
+.date
+{
+    font-size: 12px;
+}
+
+.text
+{
+    color: var(--var1);
+    margin: 0;
+}
+
+
+.mention
+{
+    display: flex;
+    align-items: center;
+    gap:10px;
+    height: 34px; 
+    margin: 0;  
+}
+.mention img
+{
+    width: 34px;
+    height: 34px;
+}
+.mention p{
+    font-size: 5px;
+}
+
+.attribution
+{
+    padding-top: 11%;
+    align-self: center;
+    font-size: 10px;
+}
+
+@media (max-width:450px)
+{
+    .card
+    {
+        width: 327px;
+        height: 501px;
+        box-shadow: 0.5rem 0.5rem var(--standard); 
+    }
+
+    .preview_pic
+    {
+     width: 279px;
+     height: 200px;
+     object-fit: cover
+        
+    }
+
+    .card h2
+    {
+        color: var(--standard);
+    }
+    
+}
+
+
+
+
+
